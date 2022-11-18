@@ -172,7 +172,7 @@
           <archive>
             <!-- https://dzone.com/articles/automatic-module-name-calling-all-java-library-maintainers -->
             <manifestEntries>
-              <Automatic-Module-Name>com.github.jinahya.w3c.xmldsig.core1.bind</Automatic-Module-Name>
+              <Automatic-Module-Name>com.github.jinahya.org.w3.xmldsig.core1.bind</Automatic-Module-Name>
             </manifestEntries>
           </archive>
         </configuration>
