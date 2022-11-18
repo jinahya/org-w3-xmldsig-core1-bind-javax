@@ -30,4 +30,4 @@ buildNumber.properties
 !.idea/codeStyles
 
 
-.DS_Store
+**/.DS_Store
