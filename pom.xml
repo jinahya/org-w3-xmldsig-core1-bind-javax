@@ -8,7 +8,7 @@
     <version>0.8.9</version>
   </parent>
 
-  <artifactId>w3c-xmldsig-core1-bind</artifactId>
+  <artifactId>org-w3-xmldsig-core1-bind</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
