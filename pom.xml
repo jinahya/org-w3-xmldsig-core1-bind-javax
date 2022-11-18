@@ -13,9 +13,9 @@
   <packaging>jar</packaging>
 
   <name>${project.artifactId}</name>
-  <description>A library for reading/writing non-octet aligned values</description>
+  <description>Java binding classes for XML Signature Syntax and Processing Version 1.1</description>
   <url>https://github.com/jinahya/${project.artifactId}</url>
-  <inceptionYear>2020</inceptionYear>
+  <inceptionYear>2022</inceptionYear>
   <organization>
     <name>Jinahya, Inc.</name>
     <url>https://jinahya.com</url>
@@ -321,7 +321,7 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.7.1.1</version>
+        <version>4.7.2.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
