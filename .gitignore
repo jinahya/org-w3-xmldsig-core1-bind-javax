@@ -28,3 +28,6 @@ buildNumber.properties
 *.iml
 .idea
 !.idea/codeStyles
+
+
+.DS_Store
