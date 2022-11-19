@@ -7,3 +7,5 @@
 [![javadoc](https://javadoc.io/badge2/com.github.jinahya/org-w3-xmldsig-core1-bind-javax/javadoc.svg)](https://javadoc.io/doc/com.github.jinahya/org-w3-xmldsig-core1-bind-javax)
 
 Java classes for binding [XML Signature Syntax and Processing Version 1.1](https://www.w3.org/TR/xmldsig-core1/).
+
+See [org-w3-xmldsig-core1-bind-jakarta](https://github.com/jinahya/org-w3-xmldsig-core1-bind-jakarta) for the `jakarta` namespace.
