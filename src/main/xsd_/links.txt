@@ -1,0 +1,4 @@
+# https://www.w3.org/TR/xmldsig-core1/#sec-Schema
+http://www.w3.org/TR/2008/REC-xmldsig-core-20080610/xmldsig-core-schema.xsd
+https://www.w3.org/TR/xmldsig-core1/xmldsig11-schema.xsd
+https://www.w3.org/TR/xmldsig-core1/xmldsig1-schema.xsd
