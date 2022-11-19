@@ -447,7 +447,6 @@
             </goals>
             <configuration>
               <episode>true</episode>
-              <!--              <schemaDirectory>${project.basedir}/src/main/xsd</schemaDirectory>-->
             </configuration>
           </execution>
         </executions>
