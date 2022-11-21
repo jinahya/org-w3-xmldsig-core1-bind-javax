@@ -8,8 +8,7 @@ import org.w3._2000._09.xmldsig_.KeyValueType;
 import org.w3._2000._09.xmldsig_.SignatureType;
 import org.w3._2000._09.xmldsig_.SignatureValueType;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.transform.dom.DOMSource;
+import javax.xml.bind.JAXBElement;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -17,10 +16,7 @@ class GenDetachedXmlTest {
 
     @Test
     void unmarshal__() throws Exception {
-        final var document = XmlUtils.loadDocument("GenDetached.xml");
-        final var context = JAXBContext.newInstance("org.w3._2000._09.xmldsig_");
-        final var unmarshaller = context.createUnmarshaller();
-        final var signature = unmarshaller.unmarshal(new DOMSource(document), SignatureType.class).getValue();
+        final var signature = OracleXmldsigUtils.unmarshal("GenDetached.xml", SignatureType.class);
         assertThat(signature).isNotNull().satisfies(s -> {
             assertThat(s.getSignedInfo()).as("//:signedInfo").isNotNull().satisfies(si -> {
                 assertThat(si.getCanonicalizationMethod().getAlgorithm())
@@ -48,7 +44,7 @@ class GenDetachedXmlTest {
                         .extracting(KeyValueType::getContent, InstanceOfAssertFactories.LIST)
                         .singleElement()
                         .satisfies(se -> {
-                            assertThat((DSAKeyValueType) se).satisfies(dsakv -> {
+                            assertThat(((JAXBElement<DSAKeyValueType>) se).getValue()).satisfies(dsakv -> {
                                 assertThat(dsakv.getP())
                                         .isNotNull().asBase64Encoded()
                                         .isEqualTo("/KaCzo4Syrom78z3EQ5SbbB4sF7ey80etKII864WF64B81uRpH5t9jQTxeEu0ImbzRMqzVDZkVG9xD7nN1kuFw==");
